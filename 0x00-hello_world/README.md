@@ -3,136 +3,139 @@
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/alxstudent-se/alx-system_engineering-devops.git)
 
 
-#### 0-iam_betty
->Create a script that switches the current user to the user betty.
-
+#### 0-preprocessor
+>Write a script that runs a C file through the preprocessor and save the result into another file.
+The C file name will be saved in the variable $CFILE
+The output should be saved in the file c
 ```sh
 #!/bin/bash
-su betty
+gcc $CFILE -E -o c
 ```
-#### 1-who_am_i
->Write a script that prints the effective username of the current user.
-
-
+#### 1-compiler
+>Write a script that compiles a C file but does not link.
+>The C file name will be saved in the variable $CFILE
+>The output file should be named the same as the C file, but with the extension .o instead of .c.
+>Example: if the C file is main.c, the output file should be main.o
 ```sh
 #!/bin/bash
-whoami
-```
-#### 2-groups
->Write a script that prints all the groups the current user is part of.
-
-```sh
-#!/bin/bash
-groups
-```
-#### 3-new_owner
->Write a script that changes the owner of the file hello to the user betty.
-
-
-```sh
-#!/bin/bash
-chown betty hello
-```
-#### 4-empty
->Write a script that creates an empty file called hello.
-
-```sh
-#!/bin/bash
-touch hello
-```
-#### 5-execute
->Write a script that adds execute permission to the owner of the file hello.
-
-```sh
-#!/bin/bash
-chmod u+x hello
-```
-#### 6-multiple_permissions
->Write a script that adds execute permission to the owner and the group owner, and read permission to other users, to the file hello.
-
-```sh
-#!/bin/bash
-chmod 754 hello
+gcc -S $CFILE -o $CFILE.o
 ```
 
-#### 7-everybody
->Write a script that adds execution permission to the owner, the group owner and the other users, to the file hello
+#### 2-assembler
+>Write a script that generates the assembly code of a C code and save it in an output file.
+The C file name will be saved in the variable $CFILE
+The output file should be named the same as the C file, but with the extension .s instead of .c.
+Example: if the C file is main.c, the output file should be main.s
 
 ```sh
 #!/bin/bash
-chmod ugo+x hello
+gcc -S $CFILE
 ```
-#### 8-James_Bond
->Write a script that sets the permission to the file hello as follows:
+#### 3-name
+>Write a script that compiles a C file and creates an executable named cisfun.
+The C file name will be saved in the variable $CFILE
 
-Owner: no permission at all
-Group: no permission at all
-Other users: all the permissions
 
 ```sh
 #!/bin/bash
-chmod 007 hello
+gcc $CFILE -o cisfun
 ```
-#### 9-John_Doe
->Write a script that sets the mode of the file hello to this:
+#### 4-puts.c
+>Write a C program that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
+Use the function puts
+You are not allowed to use printf
+Your program should end with the value 0
 
 ```sh
-#!/bin/bash
-chmod 753 hello
+#include <stdio.h>
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
+}
 ```
-#### 10-mirror_permissions
->Write a script that sets the mode of the file hello the same as olleh’s mode.
+#### 5-printf.c
+>Write a C program that prints exactly with proper grammar, but the outcome is a piece of art,, followed by a new line.
+Use the function printf
+You are not allowed to use the function puts
+Your program should return 0
+Your program should compile without warning when using the -Wall gcc option
 
 ```sh
-#!/bin/bash
-chmod --reference=olleh hello
+#include <stdio.h>
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	printf("with proper grammar, but the outcome is a piece of art,\n");
+	return (0);
+}
 ```
-#### 11-directories_permissions
->Create a script that adds execute permission to all subdirectories of the current directory for the owner, the group owner and all other users. Regular files should not be changed.
+#### 6-size.c
+>Write a C program that prints the size of various types on the computer it is compiled and run on.
+You should produce the exact same output as in the example
+Warnings are allowed
+Your program should return 0
+You might have to install the package libc6-dev-i386 on your Linux to test the -m32 gcc option
+
 
 ```sh
-#!/bin/bash
-chmod -R +X .
+#include <stdio.h>
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	int a;
+	long int b;
+	long long int c;
+	char d;
+	float f;
+
+	printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(d));
+	printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(a));
+	printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(b));
+	printf("Size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(c));
+	printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
+	return (0);
+}
 ```
-#### 12-directory_permissions
->Create a script that creates a directory called my_dir with permissions 751 in the working directory.
 
+#### 100-intel
+>Write a script that generates the assembly code (Intel syntax) of a C code and save it in an output file.
+The C file name will be saved in the variable $CFILE.
+The output file should be named the same as the C file, but with the extension .s instead of .c.
+Example: if the C file is main.c, the output file should be main.s
 ```sh
+
 #!/bin/bash
-mkdir -m 751 my_dir
+gcc -S 
 ```
-#### 13-change_group
->Write a script that changes the group owner to school for the file hello
-
+#### 101-quote.c
+>Write a C program that prints exactly and that piece of art is useful" - Dora Korpar, 2015-10-19, followed by a new line, to the standard error.
+You are not allowed to use any functions listed in the NAME section of the man (3) printf or man (3) puts
+Your program should return 1
+Your program should compile without any warnings when using the -Wall gcc option
 ```sh
-#!/bin/bash
-chgrp school hello
-```
-#### 100-change_owner_and_group
->Write a script that changes the owner to vincent and the group owner to staff for all the files and directories in the working directory.
 
-```sh
-#!/bin/bash
-chown vincent:staff *
-```
-#### 101-symbolic_link_permissions
->Write a script that changes the owner and the group owner of _hello to vincent and staff respectively.
+#include <stdio.h>
 
-```sh
-#!/bin/bash
-chown -h vincent:staff _hello
-```
-#### 102-if_only
->Write a script that changes the owner of the file hello to betty only if it is owned by the user guillaume.
-
-```sh
-#!/bin/bash
-chown --from=guillaume betty hello
-```
-#### 103-Star_Wars
->Write a script that will play the StarWars IV episode in the terminal.
-
-```sh
-#!/bin/bash
-telnet towel.blinkenlights.nl
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+{
+return (1);
+}
 ```
