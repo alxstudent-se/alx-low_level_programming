@@ -1,16 +1,12 @@
-#include<stdio.h>
+
+#include <stdio.h>
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * main - Prints the numbers from 0-9.
+(*
+ * Return: 0 on success
  */
-void main()
+int main(void)
 {
-
-  int i; 
-
-  for (i = 0; i <= 9; i++)
-  {
-    printf( i);
-  }
+	printf("0123456789\n");
+	return (0);
 }
