@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 /**
  * main - Prints the alphabet except the letters q and e.

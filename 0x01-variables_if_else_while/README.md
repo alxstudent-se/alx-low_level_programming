@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+/* more headers goes there */
 
 /**
  * main - Entry point
@@ -67,21 +68,23 @@ int main(void)
 ```sh
 #include <stdio.h>
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * main - prints the alphabet in lowercase.
+(*
+ * Return: 0 on success
  */
-int main () {
-   char ch;
+int main(void)
+{
+	char c = 'a';
 
-   for(ch = 'A' ; ch <= 'Z' ; ch++) {
-      putchar(ch);
-   }
-    for(ch = 'a' ; ch <= 'z' ; ch++) {
-      putchar(ch);
-   } 
-   return(0);
+	while (c <= 'z')
+	{
+		putchar(c);
+		c++;
+	}
+	putchar('\n');
+	return (0);
 }
+
 ```
 
 ```sh
@@ -111,40 +114,55 @@ int main () {
 ```sh
 #include <stdio.h>
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * main - print chars
+(*
+ * Return: 0 on success
  */
-int main () {
-   char ch;
+int main(void)
+{
+	char c = 'a';
+	char d = 'A';
 
-   for(ch = 'a' ; ch <= 'e' ; ch++) {
-      putchar(ch);
-   }
-   for(ch = 'f' ; ch <= 'z' ; ch++) {
-	putchar(ch);
+	while (c <= 'z')
+	{
+		putchar(c);
+		c++;
 	}
-   return(0);
+	while (d <= 'Z')
+	{
+		putchar(d);
+		d++;
+	}
+	putchar('\n');
+	return (0);
+
 }
+
 ```
 
 ```sh
-#include<stdio.h>
+#include <stdio.h>
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * main - Prints the alphabet except the letters q and e.
+(*
+ * Return: 0 on success
  */
-void main()
+int main(void)
 {
+	char c = 'a';
 
-  int i; 
-
-  for (i = 0; i <= 9; i++)
-  {
-    printf( i);
-  }
+	while (c <= 'z')
+	{
+		if (c != 'q' && c != 'e')
+		{
+			putchar(c);
+		}
+		c++;
+	}
+	putchar('\n');
+	return (0);
 }
+
 ```
 
 
