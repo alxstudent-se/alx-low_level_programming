@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main
+ * main - print chars
 (*
  * Return: 0 on success
  */
