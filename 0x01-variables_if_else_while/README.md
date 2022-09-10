@@ -48,21 +48,20 @@ int main(void)
 {
 	int n;
 	int o;
-	char str [] = "Last digit of";
+	char str[] = "Last digit of";
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	o = n % 10;
-
 	if (o > 5)
 		printf("%s %d is %d and is greater than 5\n", str, n, o);
 	else if (o == 0)
 		printf("%s %d is %d and is 0\n", str, n, o);
 	else if (o < 6)
 		printf("%s %d is %d and is less than 6 and not 0\n", str, n, o);
-
-	
 	return (0);
 }
+
 ```
 
 ```sh
@@ -85,30 +84,6 @@ int main(void)
 	return (0);
 }
 
-```
-
-```sh
-#include <stdio.h>
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-int main () {
-   char ch;
-
-   for(ch = 'a' ; ch <= 'z' ; ch++) {
-      putchar(ch);
-   }
-    for(ch = 'A' ; ch <= 'Z' ; ch++) {
-      putchar(ch);
-   }
-      for(ch = 'a' ; ch <= 'z' ; ch++) {
-      putchar(ch);
-   }
-     
-   return(0);
-}
 ```
 
 ```sh
@@ -163,8 +138,29 @@ int main(void)
 	return (0);
 }
 
+
 ```
 
+
+```sh
+#include<stdio.h>
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+void main()
+{
+
+  int i; 
+
+  for (i = 0; i <= 9; i++)
+  {
+    printf( i);
+  }
+}
+
+```
 
 ```sh
 #include <stdio.h>
@@ -186,8 +182,8 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-```
 
+```
 ```sh
 #include <stdio.h>
 #include <stdlib.h>
@@ -220,12 +216,14 @@ int main(void)
 int main(void)
 {
 	int i = '0';
+
 	while (i <= '9')
 	{
 		putchar(i);
 		i++;
 	}
 	i = 'a';
+
 	while (i <= 'f')
 	{
 		putchar(i);
@@ -234,7 +232,9 @@ int main(void)
 	putchar('\n');
 
 	return (0);
+
 }
+
 ```
 
 ```sh
@@ -263,3 +263,5 @@ int main(void)
 
 }
 ```
+
+
