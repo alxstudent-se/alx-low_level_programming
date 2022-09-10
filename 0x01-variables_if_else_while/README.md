@@ -2,6 +2,9 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/alxstudent-se/alx-system_engineering-devops.git)
 
+
+#### 0
+>
 ```sh
 #include <stdio.h>
 #include <stdlib.h>
@@ -34,7 +37,8 @@ int main(void)
 	return (0);
 }
 ```
-
+#### 1
+>
 ```sh
 #include <stdio.h>
 #include <stdlib.h>
@@ -63,7 +67,8 @@ int main(void)
 }
 
 ```
-
+#### 2
+>
 ```sh
 #include <stdio.h>
 /**
@@ -85,7 +90,8 @@ int main(void)
 }
 
 ```
-
+#### 3
+>
 ```sh
 #include <stdio.h>
 /**
@@ -114,7 +120,8 @@ int main(void)
 }
 
 ```
-
+#### 4
+>
 ```sh
 #include <stdio.h>
 /**
@@ -141,7 +148,8 @@ int main(void)
 
 ```
 
-
+#### 5
+>
 ```sh
 #include<stdio.h>
 /**
@@ -161,7 +169,8 @@ void main()
 }
 
 ```
-
+#### 6
+>
 ```sh
 #include <stdio.h>
 /**
@@ -184,6 +193,8 @@ int main(void)
 }
 
 ```
+#### 7
+>
 ```sh
 #include <stdio.h>
 #include <stdlib.h>
@@ -204,7 +215,8 @@ int main(void)
 	return (0);
 }
 ```
-
+#### 8
+>
 ```sh
 #include <stdio.h>
 
@@ -237,6 +249,8 @@ int main(void)
 
 ```
 
+#### 9
+>
 ```sh
 #include <stdio.h>
 /**
