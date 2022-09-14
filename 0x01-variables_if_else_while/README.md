@@ -12,7 +12,7 @@
 /* more headers goes there */
 
 /**
- * main - Entry point
+ * main - Entry point here
  *
  * Return: Always 0 (Success)
  */
@@ -36,6 +36,7 @@ int main(void)
 	}
 	return (0);
 }
+
 ```
 #### 1
 >
@@ -44,7 +45,7 @@ int main(void)
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - Entry point
+ * main - Entry point here
  *
  * Return: Always 0 (Success)
  */
@@ -72,7 +73,7 @@ int main(void)
 ```sh
 #include <stdio.h>
 /**
- * main - prints the alphabet in lowercase.
+ * main - prints the alphabet in lowercase
 (*
  * Return: 0 on success
  */
@@ -95,7 +96,7 @@ int main(void)
 ```sh
 #include <stdio.h>
 /**
- * main - print chars
+ * main - print chars.
 (*
  * Return: 0 on success
  */
@@ -125,7 +126,7 @@ int main(void)
 ```sh
 #include <stdio.h>
 /**
- * main - Prints the alphabet except the letters q and e.
+ * main - Prints alphabet except the letters q and e.
 (*
  * Return: 0 on success
  */
@@ -145,16 +146,14 @@ int main(void)
 	return (0);
 }
 
-
 ```
 
 #### 5
 >
 ```sh
-
 #include <stdio.h>
 /**
- * main - Prints the numbers from 0-9.
+ * main - Prints the numbers from 0-9
 (*
  * Return: 0 on success
  */
@@ -170,7 +169,7 @@ int main(void)
 ```sh
 #include <stdio.h>
 /**
- * main - prints numbers 0-9 without using char or printf/puts,
+ * main - print numbers 0-9 without using char or printf/puts,
  * and putchar 2x max
 (*
  * Return: 0 on success
@@ -194,7 +193,7 @@ int main(void)
 ```sh
 #include <stdio.h>
 /**
- * main - prints the alphabet in reverse.
+ * main - prints the alphabet in reverse
 (*
  * Return: 0 on success
  */
@@ -218,7 +217,7 @@ int main(void)
 #include <stdio.h>
 
 /**
- * main - prints all numbers of base 16.
+ * main - prints all numbers of base 16
 * Return: 0 on success
 */
 
@@ -251,7 +250,7 @@ int main(void)
 ```sh
 #include <stdio.h>
 /**
- * main - prints all possible combinations of single digit numbers.
+ * main - print all possible combinations of single digit numbers.
 (*
  * Return: 0 on success
  */
@@ -273,6 +272,7 @@ int main(void)
 	return (0);
 
 }
+
 ```
 
 #### 100
@@ -280,7 +280,7 @@ int main(void)
 ```sh
 #include <stdio.h>
 /**
- * main - prints numbers from 00 - 99.
+ * main - prints numbers from 00 - 99
 (*
  * Return: 0 on success
  */
@@ -322,7 +322,7 @@ int main(void)
 ```sh
 #include <stdio.h>
 /**
- * main - print numbers from 00 to 99.
+ * main - print numbers from 00 to 99
 (*
  * Return: 0 on success
  */
@@ -371,7 +371,7 @@ int main(void)
 #include <stdio.h>
 /**
  * main - Prints all possible combinations of a pair of
- * two digit numbers, without any repetition whatsoever.
+ * two digit numbers, without any repetition whatsoever
 (*
  * Return: 0 on success.
  */
