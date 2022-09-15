@@ -1,40 +1,30 @@
-#include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - Fizz for multiples of 3 and Buzz for multiples of 5 FizzBuzz for both
- *
+ * main - Prints number from 1-100 mult of 3 Fizz 5 Buzz
  *
  * Return: Always 0
  */
 int main(void)
 {
-	int x = 1;
+	int i;
+	char f[] = "Fizz";
+	char b[] = "Buzz";
+	char fb[] = "FizzBuzz";
 
-	while (x < 101)
+	for (i = 1; i <= 100; i++)
 	{
-		if (x % 3 == 0 && x % 5 == 0)
-		{
-			printf("%s", "FizzBuzz");
-		}
-		else if (x % 3 == 0)
-		{
-			printf("%s", "Fizz");
-		}
-		else if (x % 5 == 0)
-		{
-			printf("%s", "Buzz");
-		}
+		if (i == 100)
+			printf("%s", b);
+		else if ((i % 3 == 0) && (i % 5 == 0))
+			printf("%s ", fb);
+		else if (i % 3 == 0)
+			printf("%s ", f);
+		else if (i % 5 == 0)
+			printf("%s ", b);
 		else
-		{
-			printf("%d", x);
-		}
-
-		if (x != 100)
-		{
-		printf(" ");
-		}
-		x++;
+			printf("%d ", i);
 	}
 	printf("\n");
 	return (0);
