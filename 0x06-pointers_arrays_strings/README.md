@@ -1,5 +1,18 @@
 ``` main.h Prototypes added ```
 # TASKS
+# C More functions and nested loops
+
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/alxstudent-se/alx-system_engineering-devops.git)
+
+
+#### 0-preprocessor
+>Write a script that runs a C file through the preprocessor and save the result into another file.
+The C file name will be saved in the variable $CFILE
+The output should be saved in the file c
+```sh
+#!/bin/bash
+gcc $CFILE -E -o c
+```
 0. Write a function that concatenates two strings.
 	- Prototype: ```char *_strcat(char *dest, char *src);```
 	- This function appends the src string to the dest string, overwriting the terminating null byte (\0) at the end of dest, and then adds a terminating null byte
